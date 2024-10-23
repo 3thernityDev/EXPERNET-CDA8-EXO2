@@ -81,23 +81,23 @@ body {
     gap: 10px;
 }
 
-.loginContainer input[type=submit] {
+.loginContainer input[type="submit"] {
     background-color: orange;
     padding: 1rem;
     outline: none;
     border: unset;
 }
-.loginContainer input[type=text] {
+.loginContainer input[type="text"] {
     padding: 1rem;
     outline: none;
     border: unset;
 }
-.loginContainer input[type=email] {
+.loginContainer input[type="email"] {
     padding: 1rem;
     outline: none;
     border: unset;
 }
-.loginContainer input[type=password] {
+.loginContainer input[type="password"] {
     padding: 1rem;
     outline: none;
     border: unset;
@@ -106,3 +106,14 @@ body {
 .loginContainer p {
     color: red;
 }
+
+.loginContainer input[type="text"]:focus {
+    border-bottom: 1px solid orange;
+}
+.loginContainer input[type="email"]:focus {
+    border-bottom: 1px solid orange;
+}
+.loginContainer input[type="password"]:focus {
+    border-bottom: 1px solid orange;
+}
+
