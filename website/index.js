@@ -32,6 +32,11 @@ const validate = () => {
         } else {
             document.getElementById("errorPassword").innerText =
                 "Les mots de passe ne sont pas identique";
+            document
+                .getElementById("form")
+                .addEventListener("submit", function (event) {
+                    event.preventDefault();
+                });
         }
     }
 };
