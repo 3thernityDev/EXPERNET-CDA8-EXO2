@@ -43,7 +43,7 @@ body {
     gap: 1rem;
 }
 
-.testContainer input[type=text] {
+.testContainer input[type="text"] {
     width: 300px;
     height: 50px;
     outline: none;
@@ -52,9 +52,13 @@ body {
 
 .testContainer form button {
     background-color: orange;
+    width: 300px;
+    height: 50px;
     padding: 1rem;
     border: none;
     outline: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .testContainer form button:hover {
