@@ -80,3 +80,25 @@ body {
     border-radius: 5px;
     gap: 10px;
 }
+
+.loginContainer input[type=submit] {
+    background-color: orange;
+    padding: 1rem;
+    outline: none;
+    border: unset;
+}
+.loginContainer input[type=text] {
+    padding: 1rem;
+    outline: none;
+    border: unset;
+}
+.loginContainer input[type=email] {
+    padding: 1rem;
+    outline: none;
+    border: unset;
+}
+.loginContainer input[type=password] {
+    padding: 1rem;
+    outline: none;
+    border: unset;
+}
