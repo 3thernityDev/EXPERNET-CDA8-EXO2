@@ -13,36 +13,58 @@
     </header>
     <body>
         <div class="loginContainer">
-            <form action="">
+            <form action="#">
+                <h2>Création d'un compte utilisateur</h2>
                 <label for="lname">Nom</label>
                 <input
                     type="text"
                     placeholder="Votre nom de famille"
                     required
+                    id="lname"
                 />
                 <label for="fname">Prenom</label>
-                <input type="text" placeholder="Votre prenom" required />
+                <input
+                    type="text"
+                    placeholder="Votre prenom"
+                    id="fname"
+                    required
+                />
                 <label for="email">Email</label>
                 <input
                     type="email"
                     placeholder="votremail@exemple.com"
                     required
+                    id="email"
                 />
                 <label for="pseudo">Pseudo</label>
-                <input type="text" placeholder="3thernity" required />
+                <input
+                    type="text"
+                    placeholder="3thernity"
+                    required
+                    id="pseudo"
+                />
                 <label for="password">Mots de passe</label>
                 <input
                     type="password"
                     placeholder="Votre mot de passe"
                     required
+                    id="password"
                 />
                 <label for="checkpassword">Confirmer le mot de passe</label>
                 <input
-                    type="checkpassword"
+                    type="password"
                     placeholder="Confirmer votre mot de passe"
                     required
+                    id="checkpassword"
+                />
+                <p id="errorPassword" class="errorPassword"></p>
+                <input
+                    type="submit"
+                    value="S'enregistrer"
+                    onclick="validate()"
                 />
             </form>
         </div>
     </body>
+    <script src="index.js"></script>
 </html>
