@@ -1,0 +1,31 @@
+services:
+    apache:
+        image: httpd:latest
+        container_name: exo-2
+        ports:
+            - '8181:80'
+        volumes:
+            - ./website:/usr/local/apache2/htdocs
+    db:
+        image: mariadb:latest
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: n&3@3-4DN_.e
+            MYSQL_DATABASE: backenddocker
+        ports:
+            - "3307:3307"
+        volumes:
+            - db_data:/var/lib/mysql
+    phpmyadmin:
+        image: phpmyadmin:latest
+        restart: always
+        ports:
+            - 8585:80
+        environment:
+            MYSQL_USERNAME: root
+            MYSQL_ROOT_PASSWORD: n&3@3-4DN_.e
+            UPLOAD_LIMIT: 10G
+
+
+volumes:
+    db_data:           
