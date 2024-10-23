@@ -15,12 +15,12 @@ const validate = () => {
     let checkpassword = document.getElementById("checkpassword");
 
     if (
-        (!fname.value,
-        !lname.value,
-        !email.value,
-        !pseudo.value,
-        !password.value,
-        !checkpassword.value)
+        (!fname.value.trim(),
+        !lname.value.trim(),
+        !email.value.trim(),
+        !pseudo.value.trim(),
+        !password.value.trim(),
+        !checkpassword.value.trim())
     ) {
         console.log("Merci de remplir tout les champs");
         document.getElementById("errorPassword").innerText =
