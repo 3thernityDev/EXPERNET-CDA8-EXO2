@@ -102,3 +102,7 @@ body {
     outline: none;
     border: unset;
 }
+
+.loginContainer p {
+    color: red;
+}

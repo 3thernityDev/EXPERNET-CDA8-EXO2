@@ -23,6 +23,8 @@ const validate = () => {
         !checkpassword.value)
     ) {
         console.log("Merci de remplir tout les champs");
+        document.getElementById("errorPassword").innerText =
+            "Merci de remplir tout les champs";
     } else {
         if (password.value === checkpassword.value) {
             console.log("ok pour envoie");
