@@ -24,8 +24,9 @@ const validate = () => {
     ) {
         console.log("Merci de remplir tout les champs");
     } else {
-        if (password === checkpassword) {
+        if (password.value === checkpassword.value) {
             console.log("ok pour envoie");
+            document.getElementById("errorPassword").innerText = "";
         } else {
             document.getElementById("errorPassword").innerText =
                 "Les mots de passe ne sont pas identique";
